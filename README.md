@@ -123,5 +123,42 @@ There is an odd cyle of length 3(look at 3rd, 4th and 5th row). So return false(
 
 ### solution:  oddly-loops.py
 
+### Problem3 Monica Jollibee's Chicken Counter
 
-### Problem3
+Monica, an intern at ACM, loves eating Jollibee, but there's a rule: she likes to eat the same chicken piece consecutively. The bucket is too tall for her, so she reaches her hand in and grabs a random piece. Every time she eats the same chicken piece back-to-back, she will buy herself a Peach Pie to eat.
+
+Given a list of items Monica eats, represented as a string of characters where A corresponds to thighs, and B represents legs, determine how many Peach Pies Monica will get. A Peach Pie is earned every time Monica eats the same chicken piece consecutively.
+
+Input Format
+
+A single string chicken_sequence which represents the sequence of chicken pieces Monica eats.
+
+Constraints
+
+1 ≤ len(chicken_sequence) ≤ 1000
+
+Output Format
+
+Return an integer representing the number of Peach Pies Monica will get.
+
+Sample Input 0
+
+ABAB
+Sample Output 0
+
+0
+Explanation 0
+
+No pieces were eaten consecutively, therefore, no Peach Pies were bought.
+
+Sample Input 1
+
+AABBA
+Sample Output 1
+
+2
+Explanation 1
+
+This will be 2 Peach Pies because 2 thighs were eaten back to back, and then 2 legs were eaten back to back.
+
+### sol 3 - monica.py
