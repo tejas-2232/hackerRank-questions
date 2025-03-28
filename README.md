@@ -66,11 +66,62 @@ Starting with Mathew's topics, the topics were outputed in reverse order while a
 
 Solution1: conversation_stack.py
 
-
 <hr>
 
-Problem2
+## Problem2 Oddly Expensive Loops
+After a grueling semester of CS301, Jack finally decides to take a well-desrved vacation. His dream? To visit every spot on his bucket list.
+
+However, there is a catch. The travel agency Jack booked with has an insane surcharge policy: if any part of the trip forms a cycle with an odd number of destinations, he must pay an extra fee because, apparently, "odd cycles create odd vibes".
+
+Unfortunately, Jack already spent most of his money this semester on energy drinks and the textbook, so he cannot afford any surcharge. He decides to plan his vacation route to avoid all odd-length cycles.
+
+Decide whether or not Jack can travel fee-free, or if his journey is doomed?
+
+You must pass ALL test cases to receive credit.
+
+Input Format
+
+The number of locations is given as numLocations. A 2-D adjacency matrix called journey[][] of size numLocations x numLocations where each element is represented by either a 1(there is connection to a location) or 0(no connection to a location).
+
+Constraints
+
+numLocations >= 2
+
+Output Format
+
+Return true if no odd-length cycles found, false otherwise.
+
+Sample Input 0
+
+4
+0 1 0 1
+1 0 1 0
+0 1 0 1
+1 0 1 0
+Sample Output 0
+
+1
+Explanation 0
+
+This graph is a cycle of length 4 so we should return true(1).
+
+Sample Input 1
+
+6
+0 1 0 0 0 1
+1 0 1 0 0 0
+0 1 0 1 1 1
+0 0 1 0 1 1
+0 0 1 1 0 1
+1 0 1 1 1 0
+Sample Output 1
+
+0
+Explanation 1
+
+There is an odd cyle of length 3(look at 3rd, 4th and 5th row). So return false(0).
+
+### solution:  oddly-loops.py
 
 
-
-Problem3
+### Problem3
